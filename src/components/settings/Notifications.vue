@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="col-12 col-xl-6">
-                <ActionInput v-model="expiryNotifInput" :type="'number'" :placeholder="$t('day')" :icon="'plus'" :action="() => addExpiryNotifDay(expiryNotifInput)" />
+                <ActionInput v-model="expiryNotifInput" :type="'number'" :placeholder="$t('day')" :min="1" :icon="'plus'" :action="() => addExpiryNotifDay(expiryNotifInput)" />
             </div>
             <div>
                 <button class="btn btn-primary" type="button" @click="saveSettings()">
